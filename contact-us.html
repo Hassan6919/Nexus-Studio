@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#e8293b" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>Design Nexus Studio</title>
+    <meta name="author" content="Themezinho" />
+    <meta
+      name="description"
+      content="Brabus | Contemporary Modern Portfolio for Agencies"
+    />
+    <meta
+      name="keywords"
+      content="creative, works, showcase, portfolio, highlight, projects, modern, agency, digital, studio, css, animation, transition, freelancers"
+    />
+
+    <!-- SOCIAL MEDIA META -->
+    <meta
+      property="og:description"
+      content="Brabus | Contemporary Modern Portfolio for Agencies"
+    />
+    <meta
+      property="og:image"
+      content="http://www.themezinho.net/brabus/preview.png"
+    />
+    <meta property="og:site_name" content="Brabus" />
+    <meta property="og:title" content="Brabus" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.themezinho.net/brabus" />
+
+    <!-- TWITTER META -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@brabus" />
+    <meta name="twitter:creator" content="@brabus" />
+    <meta name="twitter:title" content="brabus" />
+    <meta
+      name="twitter:description"
+      content="Brabus | Contemporary Modern Portfolio for Agencies"
+    />
+    <meta
+      name="twitter:image"
+      content="http://www.themezinho.net/brabus/preview.png"
+    />
+
+    <!-- FAVICON FILES -->
+    <link
+      href="ico/apple-touch-icon-144-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="144x144"
+    />
+    <link
+      href="ico/apple-touch-icon-114-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="114x114"
+    />
+    <link
+      href="ico/apple-touch-icon-72-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="72x72"
+    />
+    <link
+      href="ico/apple-touch-icon-57-precomposed.png"
+      rel="apple-touch-icon"
+    />
+    <link href="/images/my-images/logo.png" rel="shortcut icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/odometer.min.css" />
+    <link rel="stylesheet" href="css/fancybox.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Added by Me  -->
+
+    <style>
+      .my-col {
+        padding: 15px; /* Adjust spacing around each grid item */
+      }
+
+      .counter-item {
+        border: 1px solid black;
+        padding: 100px 20px;
+        color: white;
+        transition: transform 0.3s ease; /* Smooth transition for tilt effect */
+        display: block; /* Ensures the item fills the column */
+        background: black; /* Optional: to make sure the background and border are visible */
+      }
+
+      /* Tilt effect on hover */
+      .counter-item:hover {
+        transform: rotateY(5deg);
+      }
+
+      /* Apply staggered animation delays */
+      .counter-item:nth-child(1) {
+        animation-delay: 0.7s;
+      }
+      .counter-item:nth-child(2) {
+        animation-delay: 1s;
+      }
+      .counter-item:nth-child(3) {
+        animation-delay: 1.3s;
+      }
+      .counter-item:nth-child(4) {
+        animation-delay: 1.5s;
+      }
+
+      /* Tilt effect on hover */
+      .counter-item:hover {
+        transform: rotateY(5deg);
+      }
+
+      @keyframes fallDown {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .counter-section i {
+        display: block;
+        margin: 0 0 10px;
+      }
+
+      .counter-section span.counter {
+        font-size: 40px;
+        color: #000;
+        line-height: 60px;
+        display: block;
+        font-family: "Fjalla One", sans-serif;
+        letter-spacing: 2px;
+      }
+
+      .counter-title {
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-family: "Oswald", sans-serif;
+      }
+
+      .medium-icon {
+        font-size: 40px !important;
+        margin-bottom: 15px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="inner" data-tilt data-tilt-perspective="2000">
+        <figure class="fadeInUp animated">
+          <img src="images/preloader.gif" alt="Image" />
+        </figure>
+        <span class="typewriter" id="typewriter"></span>
+      </div>
+      <!-- end inner -->
+    </div>
+    <!-- end preloader -->
+    <div class="transition-overlay">
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+    </div>
+    <!-- end transition-overlay -->
+    <div class="navigation-menu">
+      <div class="bg-layers">
+        <span></span> <span></span> <span></span> <span></span>
+      </div>
+      <!-- end bg-layers -->
+      <div class="inner" data-tilt data-tilt-perspective="2000">
+        <div class="menu">
+          <ul>
+            <!-- <li>
+              <a href="#">START</a>
+              <ul>
+                <li><a href="index.html">Slider</a></li>
+                <li><a href="index-video.html">Video</a></li>
+                <li><a href="index-particles.html">Particles</a></li>
+                <li><a href="index-perspective.html">Perspective</a></li>
+              </ul>
+            </li> -->
+            <li><a href="/about-us.html">About us</a></li>
+            <li>        <a href="/work.html">Work</a></li>
+            <li>        <a href="/our-process.html">Our Process</a></li>
+            <li>        <a href="/contact-us.html">Contact us</a></li>
+          </ul>
+        </div>
+        <!-- end menu -->
+        <blockquote>Let's create useful website for you ?</blockquote>
+      </div>
+      <!-- end inner -->
+    </div>
+    <!-- end navigation-menu -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/my-images/logo.png" alt="logo" class="logo-image" />
+        </a>
+        <img
+        src="images/my-images/white logo.png"
+        alt="logo-text"
+        id="logo-text1"
+        class="logo-text"
+      />
+        
+      <img
+        src="images/my-images/fonttttt.png"
+        alt="logo-text"
+        id="logo-text2"
+        class="logo-text"
+      />
+      <span class="bracket">{</span>
+        <span class="bracket">}</span>
+      </div>
+      <div class="left">
+        <div class="services-button">
+          <a class="">Services
+            <span>
+              <img src="/images/down-arrow.png" class="arrow-down-logo" />
+            </span>
+          </a>
+          <div class="dropdown-content">
+            <a href="/ux-design.html">UX Design</a>
+            <a href="/web-development.html">Web Development</a>
+            <a href="/web-design.html">Web Design</a>
+            <a href="/branding.html">Branding</a>
+            <a href="/web-flow.html">Webflow</a>
+            <a href="/mvp.html">MVP Development</a>
+            <a href="/saas-design.html">SaaS Design</a>
+            <a href="/mobile-design.html">Mobile App</a>
+          </div>
+        </div>
+        <a href="/about-us.html">About us</a>
+        <a href="/work.html">Work</a>
+        <a href="/our-process.html">Our Process</a>
+        <a href="/contact-us.html">Contact us</a>
+      </div>
+      <!-- end left -->
+      <!-- end logo -->
+      <div class="right">
+        <ul class="language">
+          <!-- <li><a href="#">EN</a></li> -->
+          <!-- <li><a href="#">RU</a></li> -->
+        </ul>
+        <div class="hamburger-menu">
+          <b>MENU</b>
+          <div class="hamburger" id="hamburger-menu">
+            <span></span> <span></span> <span></span>
+          </div>
+        </div>
+
+        <div class="nav-contact-button">
+          <a href="/contact-us.html">Contact Us</a>
+        </div>
+        <!-- end hamburger-menu -->
+      </div>
+      <!-- end right -->
+    </nav>
+    <!-- end navbar -->
+
+    <!-- end header -->
+
+    <section
+      class="contact-section wow fadeInLeftCustom "
+      data-wow-duration="1s"
+      data-wow-delay="0.5s"
+    >
+      <div class="container form-container mt-5">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="contact-heading">Have a Project Idea?</h2>
+          </div>
+          <div class="col-md-12">
+            <form
+              action="#"
+              method="POST"
+              class="contact-form wow fadeInRightCustom"
+              data-wow-duration="1s"
+              data-wow-delay="0.5s"
+            >
+              <div class="form-group">
+                <label for="fullName" class="c">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control contact-input"
+                  id="fullName"
+                  name="fullName"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="companyName" class="contact-label"
+                  >Company Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control contact-input"
+                  id="companyName"
+                  name="companyName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" class="contact-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control contact-input"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="serviceRequired" class="contact-label"
+                  >Service Required</label
+                >
+                <select
+                  class="form-control contact-input"
+                  id="serviceRequired"
+                  name="serviceRequired"
+                  required
+                >
+                  <option value="" disabled selected>
+                    Select Your Service
+                  </option>
+                  <option value="Service 1">Service 1</option>
+                  <option value="Service 2">Service 2</option>
+                  <option value="Service 3">Service 3</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="projectBudget" class="contact-label"
+                  >Project budget</label
+                >
+                <select
+                  class="form-control contact-input"
+                  id="projectBudget"
+                  name="projectBudget"
+                  required
+                >
+                  <option value="" disabled selected>Select Your Range</option>
+                  <option value="Less than $1000">Less than $1000</option>
+                  <option value="$1000 - $5000">$1000 - $5000</option>
+                  <option value="$5000 - $10000">$5000 - $10000</option>
+                  <option value="More than $10000">More than $10000</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="projectDetails" class="contact-label"
+                  >Project details</label
+                >
+                <textarea
+                  class="form-control contact-input"
+                  id="projectDetails"
+                  name="projectDetails"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary contact-btn">
+                Send inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer  -->
+
+    <footer class="footer wow fadeIn" data-wow-delay="0.5s">
+      <div class="container-fluid footer-container">
+        <div class="row">
+          <!-- First Section: Logo and Title -->
+          <div class="col-lg-6 footer-logos">
+            <div class="logos">
+              <img
+                src="images/my-images/logo.png"
+                alt="Image"
+                class="logo-image"
+              />
+              <img
+                src="images/my-images/white logo.png"
+                alt="Image"
+                class="logo-text"
+              />
+            </div>
+            <div class="footer-quote wow fadeIn" data-wow-delay="0.6s">
+              <h6>
+                An Experience Design Agency focusing on building functional,
+                simple, human-centered digital products for future.
+              </h6>
+            </div>
+            <div class="slide-btn">
+              <a href="#">
+                <div class="lines"><span></span> <span></span></div>
+                <!-- end lines -->
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 104 104"
+                  enable-background="new 0 0 104 104"
+                  xml:space="preserve"
+                >
+                  <circle
+                    class="video-play-circle"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                    stroke-miterlimit="1"
+                    cx="52"
+                    cy="52"
+                    r="50"
+                  />
+                </svg>
+                <b>CONTACT US</b>
+              </a>
+            </div>
+          </div>
+
+          <!-- Second Section: Contact Information -->
+          <div class="col-lg-3 footer-contact-us">
+            <div class="footer-contact wow fadeIn" data-wow-delay="0.7s">
+              <h5>Contact Information</h5>
+              <address>
+               Address: 30 N Gould St, Ste 23919 <br/> Sheridan, WY 82801
+              </address>
+              <address>
+               Additional Address: 1 captains road, Edinburgh Eh17 8hy
+               </address>
+              <address>mian@designnexusstudio.com</address>
+              <address>
+                +12098135355 <br/> 07425066953
+              </address>
+            </div>
+          </div>
+
+          <!-- Third Section: Useful Links -->
+        <div class="col-lg-3 footer-useful-links">
+            <div class="footer-links wow fadeIn" data-wow-delay="0.8s">
+              <h5>Useful Links</h5>
+              <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about-us.html">About us</a></li>
+                <li><a href="/work.html">Work</a></li>
+                <li><a href="/our-process.html">Our Process</a></li>
+                <li><a href="/contact-us.html">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- end footer -->
+
+    <audio id="hamburger-hover" src="audio/link.mp3" preload="auto"></audio>
+
+    <!-- JS FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/odometer.min.js"></script>
+    <script src="js/jquery.typewriter.js"></script>
+    <script src="js/fancybox.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".counter").each(function () {
+          var $this = $(this),
+            countTo = $this.attr("data-count");
+
+          $this.waypoint(
+            function (direction) {
+              if (direction === "down" && !$this.data("counted")) {
+                $this.data("counted", true);
+                $({
+                  countNum: $this.text(),
+                }).animate(
+                  {
+                    countNum: countTo,
+                  },
+                  {
+                    duration: 2000, // Duration of the animation
+                    easing: "linear",
+                    step: function () {
+                      $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function () {
+                      $this.text(this.countNum);
+                    },
+                  }
+                );
+              } else if (direction === "up") {
+                $this.data("counted", false);
+                $this.text(0); // Reset counter on scroll up
+              }
+            },
+            {
+              offset: "90%", // Trigger the animation when the counter is 90% in view
+            }
+          );
+        });
+      });
+    </script>
+    <script>
+      window.onload = function () {
+        // Get the current URL
+        var currentUrl = window.location.pathname;
+
+        // Check if the URL contains "/works.html"
+        if (
+          currentUrl.includes("/work") ||
+          currentUrl.includes("/about-us") || 
+          currentUrl.includes("/our-process") || 
+          currentUrl.includes("/contact-us")
+        ) {
+          // Apply styling for "/works.html"
+          var navbarLinks = document.querySelectorAll(".navbar a");
+          var contactUs = document.querySelector(".nav-contact-button a");
+          var logo = document.getElementById("logo-text1")
+          logo.style.display = "none";
+          contactUs.style.border = "1px solid black";
+          navbarLinks.forEach(function (link) {
+            link.style.color = "#000";
+          });
+        }
+      };
+    </script>
+    <script>
+        $(document).ready(function() {
+    $('.gallery img').each(function() {
+        var randomHeight = Math.floor(Math.random() * (500 - 200 + 1)) + 200; // Generate random height between 200px and 500px
+        $(this).css('height', randomHeight + 'px');
+    });
+});
+      $(document).ready(function() {
+    var $gallery = $('.gallery');
+    var $images = $gallery.find('img').clone(); // Clone images
+    $gallery.append($images); // Append cloned images
+});
+
+    </script>
+  </body>
+</html>
